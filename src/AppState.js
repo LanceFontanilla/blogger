@@ -10,7 +10,8 @@ export const AppState = reactive({
   blogs: [],
   /** @type {Blog||null} */
   activeBlog: null,
-
+  /** @type {Profile||null} */
+  activeProfile: null,
 
 
 

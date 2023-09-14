@@ -9,12 +9,12 @@
                     <img :src="activeBlog.imgUrl" alt="">
                     <p>{{ activeBlog.createdAt }}</p>
                 </div>
-                <router-link :to="{name: 'Profiles Page', params: {profileId: activeBlog.creator.id}}" @click="stop">
-                    <div>
+                <div>
+                        <router-link :to="{name: 'Profile Page', params: {profileId: activeBlog.creator.id}}" @click.stop>
                         <img class="profile-pic" :src="activeBlog.creator.picture" alt="">
-                        <p>{{ activeBlog.creator.name }}</p>
+                        {{ activeBlog.creator.name }}
+                    </router-link>
                     </div>
-                </router-link>
             
             </div>
 </template>
